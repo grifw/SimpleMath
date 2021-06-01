@@ -1,0 +1,24 @@
+body {
+    background-color: #f4c983 ;
+    text-align: center;
+}
+
+h1,h3,p{
+    color: #484018;
+}
+
+.answer_number{
+    font-size: x-large;
+}
+.div_button{
+    background-color: #5b6d5b;
+    border-color: #e40017;
+    color: #e40017;
+    padding: 40px,40px;
+}
+button{
+    padding: 40px,40px;
+}
+.results_tracker{
+    
+}
