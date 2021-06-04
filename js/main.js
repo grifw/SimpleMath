@@ -12,7 +12,8 @@ function division_prompt() {
     let txt;
     let quotient =  getRandomIntInclusive(1,10)
     let divisor =  getRandomIntInclusive(1,10)
-    let dividend = quotient * divisor //The dividend is found by multiplying 2 numbers between 1 and 10 to garunte 
+    let dividend = quotient * divisor 
+    //The dividened is created by multiplying 2 numbers between 1 and 10 to garunte the correct anwser is an int between 1 and 10 
     let user_answer = prompt(`What is ${dividend} divided by ${divisor}`,"?")
     let user_int = parseInt(user_answer);
 
@@ -32,3 +33,24 @@ function division_prompt() {
     document.getElementById("incorrect_amount_numbers").innerHTML = amount_incorrect
 }
 
+function multipliction_prompt() {
+    let txt;
+    let multipule_one =  getRandomIntInclusive(1,10)
+    let multipule_two =  getRandomIntInclusive(1,10)
+    let product = multipule_one * multipule_two
+    let user_answer = prompt(`What is ${multipule_one} times ${multipule_two}?`)
+    let user_int = parseInt(user_answer);
+
+    if (user_answer == null || user_answer == "") {
+        txt = "User cancelled the prompt."
+    } else if(user_int==product){
+        txt = `Correct!! ${multipule_one} times ${multipule_two} is ${product}`
+        amount_correct += 1
+    } else {
+        txt = `Sorry ${multipule_one} divided by ${multipule_two} equals ${product}`
+        amount_incorrect += 1
+    }
+    document.getElementById("answer_state").innerHTML = txt 
+    document.getElementById("correct_amount_numbers").innerHTML = amount_correct
+    document.getElementById("incorrect_amount_numbers").innerHTML = amount_incorrect
+}

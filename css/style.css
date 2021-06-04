@@ -10,14 +10,13 @@ h1,h3,p{
 .answer_number{
     font-size: x-large;
 }
-.div_button{
+.button{
     background-color: #5b6d5b;
-    border-color: #e40017;
+    border: none;
     color: #e40017;
-    padding: 40px,40px;
-}
-button{
-    padding: 40px,40px;
+    padding: 40px 40px;
+    text-align: center;
+    font-size: larger;
 }
 .results_tracker{
     
