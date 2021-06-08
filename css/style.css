@@ -1,3 +1,9 @@
+@media (min-width: 320px) and (max-width:799px) {
+    .problem_buttons{
+        display: grid;
+        grid-gap: 1.5rem;
+    }
+}
 body {
     background-color: #f4c983 ;
     text-align: center;
@@ -17,7 +23,4 @@ h1,h3,p{
     padding: 40px 40px;
     text-align: center;
     font-size: larger;
-}
-.results_tracker{
-    
 }
