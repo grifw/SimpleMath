@@ -1,12 +1,12 @@
-@media (min-width: 320px) and (max-width:799px) {
-    .problem_buttons{
-        display: grid;
-        grid-gap: 1.5rem;
-    }
+html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+
+*{
+    box-sizing: border-box;
 }
+
 body {
     background-color: #f4c983 ;
-    text-align: center;
+    
 }
 
 h1,h3,p{
@@ -20,7 +20,67 @@ h1,h3,p{
     background-color: #5b6d5b;
     border: none;
     color: #e40017;
-    padding: 40px 40px;
+    padding: 2rem 2rem;
     text-align: center;
-    font-size: larger;
+    font-size: xx-large;
+}
+.problem_buttons{
+    display: grid;
+    grid-gap: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    
+}
+.problem_buttons :hover{
+    border: 2px solid #e40017;
+}
+.result_box{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+#nav_menu{
+    display: flex;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    flex-direction: column;
+}
+#nav_menu li{
+    display: block;
+}
+
+#nav_menu li a{
+    padding:  6px 12px;
+    border-bottom: 2px solid red;
+    display: block;
+    color: #5b6d5b;
+    text-decoration: none;
+}
+
+#nav_menu li a:hover{
+    border-color: #5b6d5b;
+}
+@media screen and (min-width: 800px) {
+    main{
+        flex-direction: row;
+    }
+    #nav_menu{
+        flex-direction: row;
+    }
+}
+@media (min-width:965px){
+    .problem_buttons{
+        display: grid;
+        grid-template-columns: auto;
+    }
 }

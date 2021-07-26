@@ -6,25 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel='stylesheet' type='text/css' href='css/style.css'>
-    <link rel='stylesheet' type='text/css' href='css/normalize.css'>
-    <script src='js/main.js'></script>
+    <script defer src='js/main.js'></script>
 </head>
 <body>
-    <h1>Simple Division Problems</h1>
+    <h1>Simple Math Problems</h1>
     
+    <header>
+        <nav>
+            <ul id=nav_menu>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+        
+    <p class=discription>
+        This website will give you a random division or multiplication problem to help you hone those math skills. The multiplication problems are always 2 numbers between 1 and 10. The division problem will always end up with an answer between 1 and 10 
+        Go ahead and click one of the buttons to get started. How many can you get right?
+    </p>
+    
+        
     <div class = problem_buttons>
         <button class = "button" onclick="division_prompt()">Click for a division problem</button>
         <button class = "button" onclick="multipliction_prompt()">Click for a multiplication problem</button>
     </div>
+
+    <div class=question_display>
+        <p id=question>
+
+        </p>
+    </div>
    
+    <form class= user_input>
+        <label for="user_anser">Your answer:</label>
+        <input type="text" id="user_answer" name="user_answer">
+        
+        <button id="SubButton" type="button">Submit Answer</button>
+    
+    </form>
+
     <div class = results_tracker>
         <h3 id ="answer_state"></h3>
         
-        <p>Number Correct</p>
-        <p class ="answer_number" id ="correct_amount_numbers"></p>
-
-        <p>Number Incorrect</p>
-        <p class ="answer_number" id= "incorrect_amount_numbers"></p>
+        <div class = result_box >
+            <p >Number Correct</p>
+            <p class ="answer_number" id ="correct_amount_numbers">0</p>
+        </div>
+        <div class = result_box >
+            <p>Number Incorrect</p>
+            <p class ="answer_number" id= "incorrect_amount_numbers">0</p>
+        </div>
     </div>
+
+    <footer>Made by Griffin Weber</footer>
 </body>
 </html>
