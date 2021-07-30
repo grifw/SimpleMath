@@ -19,43 +19,43 @@
                 <ul id=nav_menu>
                     <li><a href="">Home</a></li>
                     <li><a href="#about_anchor">About</a></li>
-                    <li><a href="">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>    
-        <div class = problem_buttons>
-            <button class = "button" id=division_problem>Division problem</button>
-            <button class = "button" id=multiplication_problem>Multiplication problem</button>
-        </div>
-        <div class="problem_display">
-            <div class=question_display>
-                <p id=question>
+        <div class = game_ui>
+            <div class = problem_buttons>
+                <button class = "button" id=division_problem>Division problem</button>
+                <button class = "button" id=multiplication_problem>Multiplication problem</button>
+            </div>
+            <div class="problem_display">
+                <div class=question_display>
+                    <p id=question>
+                    </p>
+                </div>
+                <form class= user_input>
+                    <label for="user_answer" class=>Your answer</label><br>
+                    <input type="text" id="user_answer" name="user_answer">
+                    <button class="button" id="SubButton" type="button">Submit Answer</button>
+                </form>
+                <p id ="answer_state">
                 </p>
             </div>
-            <form class= user_input>
-                <label for="user_answer" class=>Your answer</label><br>
-                <input type="text" id="user_answer" name="user_answer">
-                <button class="button" id="SubButton" type="button">Submit Answer</button>
-            </form>
-            <p id ="answer_state">
-            </p>
-        </div>
-        <div class = results_tracker>
+            <div class = results_tracker>
 
-            <div class = results_stats>
-                <div class = result_box >
-                    <p class="numberID">Number Correct</p>
-                    <p class ="answer_number" id ="correct_amount_numbers">0</p>
-                </div>
-                <div class = result_box >
-                    <p class="numberID">Number Incorrect</p>
-                    <p class ="answer_number" id= "incorrect_amount_numbers">0</p>
+                <div class = results_stats>
+                    <div class = result_box >
+                        <p class="numberID">Number Correct</p>
+                        <p class ="answer_number" id ="correct_amount_numbers">0</p>
+                    </div>
+                    <div class = result_box >
+                        <p class="numberID">Number Incorrect</p>
+                        <p class ="answer_number" id= "incorrect_amount_numbers">0</p>
+                    </div>
                 </div>
             </div>
         </div>
-
         <a id=about_anchor></a><p class=discription>
             This website will give you a random division or multiplication problem to help you hone those math skills. The multiplication problems are always 2 numbers between 1 and 10. The division problem will always end up with an answer between 1 and 10 Go ahead and click one of the buttons to get started. How many can you get right?
         </p>
